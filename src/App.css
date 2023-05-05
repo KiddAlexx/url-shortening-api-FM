@@ -1,4 +1,4 @@
-/****************General-Default Styles***************/
+/***********************Variables**********************/
 
 :root {
   --cyan: #2bd0d0;
@@ -9,6 +9,8 @@
   --offwhite: #eff1f7;
   --red: #f46363;
 }
+
+/****************General-Default Styles***************/
 
 button,
 input[type='submit'],
@@ -34,6 +36,8 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+/********************Reusable Styles*******************/
 
 .btn-main {
   background-color: var(--cyan);
