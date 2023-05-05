@@ -23,7 +23,9 @@ function Header() {
       </div>
       <ul className="auth-buttons">
         <li>
-          <a href="#" className='btn-login'>Login</a>
+          <a href="#" className="btn-login">
+            Login
+          </a>
         </li>
         <li>
           <button className="btn-signup btn-main">Sign Up</button>
