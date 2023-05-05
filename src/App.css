@@ -25,6 +25,16 @@ ol {
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .btn-main {
   background-color: var(--cyan);
   color: #ffffff;

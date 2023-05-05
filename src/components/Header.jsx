@@ -10,9 +10,15 @@ function Header() {
           className="logo"
         />
         <ul className="nav-menu-items">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Resources</li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
         </ul>
       </div>
       <ul className="auth-buttons">
