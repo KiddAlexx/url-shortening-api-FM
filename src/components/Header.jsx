@@ -20,7 +20,7 @@ function Header() {
           <button className="btn-login">Login</button>
         </li>
         <li>
-          <button className="btn-signup">Sign Up</button>
+          <button className="btn-signup btn-main">Sign Up</button>
         </li>
       </ul>
     </nav>

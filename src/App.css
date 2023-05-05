@@ -25,6 +25,12 @@ ol {
   list-style-type: none;
 }
 
+.btn-main {
+  background-color: var(--cyan);
+  color: #ffffff;
+  border-radius: 2.8rem;
+}
+
 /*******************Header-Component******************/
 
 .main-nav {
