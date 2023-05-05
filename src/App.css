@@ -83,10 +83,6 @@ a:hover {
   gap: 3.7rem;
 }
 
-.btn-login {
-  color: var(--gray-dark);
-}
-
 .btn-signup {
   width: 10.5rem;
   height: 4rem;
