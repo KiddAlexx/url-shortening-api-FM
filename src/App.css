@@ -2,6 +2,7 @@
 
 :root {
   --cyan: #2bd0d0;
+  --cyan-light: #9ae3e3;
   --violet-dark: #3a3054;
   --violet-vdark: #34313d;
   --blue-vdark: #4b3f6b;
@@ -43,6 +44,12 @@ a:hover {
   background-color: var(--cyan);
   color: #ffffff;
   border-radius: 2.8rem;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+  background-color: var(--cyan-light);
+  transition: background-color 0.2s;
 }
 
 /*******************Header-Component******************/
