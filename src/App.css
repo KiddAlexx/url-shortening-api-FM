@@ -46,8 +46,7 @@ a:hover {
   border-radius: 2.8rem;
 }
 
-.btn-main:hover,
-.btn-main:focus {
+.btn-main:hover {
   background-color: var(--cyan-light);
   transition: background-color 0.2s;
 }
