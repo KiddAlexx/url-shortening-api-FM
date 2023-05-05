@@ -65,6 +65,11 @@ a:hover {
   color: var(--gray-dark);
 }
 
+.main-nav a:hover {
+  color: var(--violet-vdark);
+  transition: color 0.2s;
+}
+
 .nav-left {
   display: flex;
   align-items: center;
