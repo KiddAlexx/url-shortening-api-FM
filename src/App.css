@@ -1,3 +1,5 @@
+/****************General-Default Styles***************/
+
 :root {
   --cyan: #2bd0d0;
   --violet-dark: #3a3054;
@@ -6,4 +8,45 @@
   --gray-dark: #9e9aa8;
   --offwhite: #eff1f7;
   --red: #f46363;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/*******************Header-Component******************/
+
+.main-nav {
+  max-width: 144rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4.8rem 16.5rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.nav-menu-items {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 3.7rem;
 }
