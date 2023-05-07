@@ -17,7 +17,7 @@ function UrlForm() {
       const response = await fetch(`${API_SHRTCODE}${urlFull}`);
       const data = await response.json();
       data.ok
-        ? console.log(data.result.short_link && setErrorMessage(null))
+        ? console.log(data.result.short_link && generateErrorMessage(null))
         : displayErrorMessage(data);
       /*  console.log(data); */
     } catch (error) {
@@ -25,7 +25,7 @@ function UrlForm() {
     }
   }
 
-  function displayErrorMessage(data) {
+  function generateErrorMessage(data) {
     const error = data.error_code;
     switch (error) {
       case 1:
