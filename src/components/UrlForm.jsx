@@ -19,6 +19,7 @@ function UrlForm() {
           placeholder="Shorten a link here..."
           onChange={handleChange}
           name="urlFull"
+          value={urlFull}
           className="url-input-field"
         />
         <button className="btn-main btn-shorten">Shorten It!</button>
