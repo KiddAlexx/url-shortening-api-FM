@@ -148,3 +148,26 @@ a:hover {
   height: 100rem; /* Temp */
   background-color: var(--offwhite);
 }
+
+.url-shortening-form {
+  width: 111rem;
+  height: 16.8rem;
+  background-color: #4b3f6b;
+  border-radius: 1rem;
+}
+
+.url-input-field {
+  width: 77rem;
+  height: 6.5rem;
+  padding-left: 3rem;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.15px;
+}
+
+.btn-shorten {
+  border-radius: 1rem;
+}
