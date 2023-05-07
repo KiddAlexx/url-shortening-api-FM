@@ -40,6 +40,11 @@ a:hover {
   cursor: pointer;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 /********************Reusable Styles*******************/
 
 .btn-main {
