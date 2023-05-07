@@ -4,11 +4,22 @@ function UrlForm() {
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
 
   const [urlFull, setUrlFull] = useState('');
+  const [urlData, setUrlData] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
 
   function handleChange(event) {
     const { value } = event.target;
     setUrlFull(value);
+  }
+
+  function generateShortUrl(data) {
+    setUrlData((prevUrlData) => [
+      ...prevUrlData,
+      { urlOriginal: urlFull, urlShort: data },
+    ]);
+    setErrorMessage(null);
+    setUrlFull('');
+    console.log(urlData);
   }
 
   async function handleSubmit(event) {
@@ -17,8 +28,8 @@ function UrlForm() {
       const response = await fetch(`${API_SHRTCODE}${urlFull}`);
       const data = await response.json();
       data.ok
-        ? console.log(data.result.short_link && generateErrorMessage(null))
-        : displayErrorMessage(data);
+        ? generateShortUrl(data.result.short_link)
+        : generateErrorMessage(data);
       /*  console.log(data); */
     } catch (error) {
       console.log(error);
