@@ -152,6 +152,10 @@ a:hover {
 .url-shortening-form {
   width: 111rem;
   height: 16.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
   background-color: #4b3f6b;
   border-radius: 1rem;
 }
