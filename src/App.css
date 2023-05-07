@@ -214,6 +214,7 @@ body {
 }
 .url-short {
   display: inline-block;
+  color: var(--cyan);
 }
 .btn-copy-url {
   margin-left: 2.4rem;
