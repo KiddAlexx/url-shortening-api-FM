@@ -8,12 +8,22 @@ function UrlForm() {
   function handleChange(event) {
     const { value } = event.target;
     setUrlFull(value);
-    console.log(urlFull);
+  }
+
+  async function handleSubmit(event) {
+    try {
+      event.preventDefault();
+      const response = await fetch(`${API_SHRTCODE}${urlFull}`);
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
     <main className="url-app-container">
-      <form action="" className="url-shortening-form">
+      <form onSubmit={handleSubmit} className="url-shortening-form">
         <input
           type="text"
           placeholder="Shorten a link here..."
