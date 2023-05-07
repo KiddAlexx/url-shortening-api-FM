@@ -3,29 +3,29 @@ import { useState } from 'react';
 function UrlForm() {
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
 
-  const [urlFull, setUrlFull] = useState('');
+  const [urlForm, setUrlForm] = useState('');
   const [urlData, setUrlData] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
 
   function handleChange(event) {
     const { value } = event.target;
-    setUrlFull(value);
+    setUrlForm(value);
   }
 
   function generateShortUrl(data) {
     setUrlData((prevUrlData) => [
       ...prevUrlData,
-      { urlOriginal: urlFull, urlShort: data },
+      { urlOriginal: urlForm, urlShort: data },
     ]);
     setErrorMessage(null);
-    setUrlFull('');
+    setUrlForm('');
     console.log(urlData);
   }
 
   async function handleSubmit(event) {
     try {
       event.preventDefault();
-      const response = await fetch(`${API_SHRTCODE}${urlFull}`);
+      const response = await fetch(`${API_SHRTCODE}${urlForm}`);
       const data = await response.json();
       data.ok
         ? generateShortUrl(data.result.short_link)
@@ -78,8 +78,8 @@ function UrlForm() {
           type="text"
           placeholder="Shorten a link here..."
           onChange={handleChange}
-          name="urlFull"
-          value={urlFull}
+          name="urlForm"
+          value={urlForm}
           className="url-input-field"
         />
         <label htmlFor="urlFull">{errorMessage}</label>
