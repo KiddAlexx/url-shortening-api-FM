@@ -16,7 +16,9 @@ function UrlForm() {
       event.preventDefault();
       const response = await fetch(`${API_SHRTCODE}${urlFull}`);
       const data = await response.json();
-      data.ok ? console.log(data.result.short_link) : displayErrorMessage(data);
+      data.ok
+        ? console.log(data.result.short_link && setErrorMessage(null))
+        : displayErrorMessage(data);
       /*  console.log(data); */
     } catch (error) {
       console.log(error);
