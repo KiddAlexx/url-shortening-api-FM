@@ -144,6 +144,8 @@ a:hover {
 /********************URL-Component*******************/
 
 .url-app-container {
+  display: flex;
+  justify-content: center;
   max-width: 144rem;
   height: 100rem; /* Temp */
   background-color: var(--offwhite);
@@ -158,6 +160,7 @@ a:hover {
   gap: 2.5rem;
   background-color: #4b3f6b;
   border-radius: 1rem;
+  transform: translateY(-8.4rem);
 }
 
 .url-input-field {
@@ -170,6 +173,7 @@ a:hover {
   font-size: 2rem;
   line-height: 3.6rem;
   letter-spacing: 0.15px;
+  color: var(--violet-vdark);
 }
 
 .btn-shorten {
