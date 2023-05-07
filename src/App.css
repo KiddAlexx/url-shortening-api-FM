@@ -159,11 +159,12 @@ body {
 .url-shortening-form {
   width: 111rem;
   height: 16.8rem;
+  background-image: url('./assets/imgs/bg-shorten-desktop.svg');
+  background-color: var(--violet-dark);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  background-color: #4b3f6b;
   border-radius: 1rem;
   transform: translateY(-8.4rem);
 }
