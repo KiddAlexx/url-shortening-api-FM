@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import UrlResult from './UrlResult';
 
 function UrlForm() {
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
@@ -73,18 +74,21 @@ function UrlForm() {
 
   return (
     <main className="url-app-container">
-      <form onSubmit={handleSubmit} className="url-shortening-form">
-        <input
-          type="text"
-          placeholder="Shorten a link here..."
-          onChange={handleChange}
-          name="urlForm"
-          value={urlForm}
-          className="url-input-field"
-        />
-        <label htmlFor="urlFull">{errorMessage}</label>
-        <button className="btn-main btn-shorten">Shorten It!</button>
-      </form>
+      <div className="url-form-container">
+        <form onSubmit={handleSubmit} className="url-shortening-form">
+          <input
+            type="text"
+            placeholder="Shorten a link here..."
+            onChange={handleChange}
+            name="urlForm"
+            value={urlForm}
+            className="url-input-field"
+          />
+          <label htmlFor="urlFull">{errorMessage}</label>
+          <button className="btn-main btn-shorten">Shorten It!</button>
+        </form>
+      </div>
+      <UrlResult />
     </main>
   );
 }
