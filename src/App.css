@@ -149,9 +149,6 @@ body {
 /********************URL-Form-Component*******************/
 
 .url-app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 144rem;
   height: 100rem; /* Temp */
   background-color: var(--offwhite);
@@ -192,6 +189,11 @@ body {
   border-radius: 1rem;
 }
 
+.url-results-container {
+  display: flex;
+  justify-content: center;
+}
+
 /********************URL-Result-Component*******************/
 .link-container {
   width: 111rem;
@@ -201,11 +203,18 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  padding-left: 3.2rem;
+  padding-right: 2.4rem;
+  font-size: 2rem;
+  letter-spacing: 0.15px;
+  color: var(--violet-vdark);
 }
 
 .url-original {
 }
 .url-short {
+  display: inline-block;
 }
 .btn-copy-url {
+  margin-left: 2.4rem;
 }

@@ -88,7 +88,9 @@ function UrlForm() {
           <button className="btn-main btn-shorten">Shorten It!</button>
         </form>
       </div>
-      <UrlResult />
+      <div className="url-results-container">
+        <UrlResult />
+      </div>
     </main>
   );
 }
