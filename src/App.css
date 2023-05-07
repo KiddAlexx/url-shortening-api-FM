@@ -217,4 +217,8 @@ body {
 }
 .btn-copy-url {
   margin-left: 2.4rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
 }
