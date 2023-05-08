@@ -145,7 +145,7 @@ a:hover {
 
 .url-app-container {
   max-width: 144rem;
-  height: 100rem; /* Temp */
+  padding-bottom: 10rem;
   background-color: var(--offwhite);
 }
 

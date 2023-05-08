@@ -9,18 +9,20 @@ function UrlForm() {
   const [urlData, setUrlData] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  function copyUrl(data) {
-    navigator.clipboard.writeText(data.urlShort);
+  function copyUrl(urlObject) {
+    navigator.clipboard.writeText(urlObject.urlShort);
     setUrlData((prevUrlData) =>
       prevUrlData.map((linkData) =>
-        linkData.id === data.id ? { ...linkData, copied: true } : linkData
+        linkData.id === urlObject.id ? { ...linkData, copied: true } : linkData
       )
     );
 
     setTimeout(() => {
       setUrlData((prevUrlData) =>
         prevUrlData.map((linkData) =>
-          linkData.id === data.id ? { ...linkData, copied: false } : linkData
+          linkData.id === urlObject.id
+            ? { ...linkData, copied: false }
+            : linkData
         )
       );
     }, 5000);

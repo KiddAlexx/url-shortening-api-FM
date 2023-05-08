@@ -1,14 +1,14 @@
 function UrlResult(props) {
-  const linkElements = props.urlData.map((data) => (
-    <div className="link-container" key={data.id}>
-      <p className="url-original">{data.urlOriginal}</p>
+  const linkElements = props.urlData.map((urlObject) => (
+    <div className="link-container" key={urlObject.id}>
+      <p className="url-original">{urlObject.urlOriginal}</p>
       <div>
-        <p className="url-short">{data.urlShort}</p>
+        <p className="url-short">{urlObject.urlShort}</p>
         <button
-          onClick={() => props.handleClick(data)}
+          onClick={() => props.handleClick(urlObject)}
           className="btn-copy-url btn-main"
         >
-          {data.copied ? 'Copied!' : 'Copy'}
+          {urlObject.copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
     </div>
