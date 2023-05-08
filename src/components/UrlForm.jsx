@@ -73,6 +73,10 @@ function UrlForm() {
     }
   }
 
+  function copyUrl(data) {
+    console.log(data.urlShort);
+  }
+
   return (
     <main className="url-app-container">
       <div className="url-form-container">
@@ -92,7 +96,7 @@ function UrlForm() {
         </form>
       </div>
       <div className="url-results-container">
-        <UrlResult urlData={urlData} />
+        <UrlResult urlData={urlData} handleClick={copyUrl} />
       </div>
     </main>
   );

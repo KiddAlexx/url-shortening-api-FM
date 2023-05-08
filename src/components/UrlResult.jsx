@@ -4,7 +4,12 @@ function UrlResult(props) {
       <p className="url-original">{data.urlOriginal}</p>
       <div>
         <p className="url-short">{data.urlShort}</p>
-        <button className="btn-copy-url btn-main">Copy</button>
+        <button
+          onClick={() => props.handleClick(data)}
+          className="btn-copy-url btn-main"
+        >
+          Copy
+        </button>
       </div>
     </div>
   ));
