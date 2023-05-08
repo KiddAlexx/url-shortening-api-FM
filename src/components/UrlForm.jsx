@@ -83,7 +83,9 @@ function UrlForm() {
             onChange={handleChange}
             name="urlForm"
             value={urlForm}
-            className="url-input-field"
+            className={`url-input-field ${
+              errorMessage ? 'url-input-field-error' : ''
+            }`}
           />
           <p className="error-message-minor">{errorMessage}</p>
           <button className="btn-main btn-shorten">Shorten It!</button>
