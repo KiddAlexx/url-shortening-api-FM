@@ -90,7 +90,7 @@ function UrlForm() {
         </form>
       </div>
       <div className="url-results-container">
-        <UrlResult />
+        <UrlResult urlData={urlData} />
       </div>
     </main>
   );

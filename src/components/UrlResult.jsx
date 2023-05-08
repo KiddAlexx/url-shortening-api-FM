@@ -1,13 +1,14 @@
-function UrlResult() {
-  return (
-    <div className="link-container">
-      <p className="url-original">http://www.google.com</p>
+function UrlResult(props) {
+  const linkElements = props.urlData.map((data) => (
+    <div className="link-container" key={data.id}>
+      <p className="url-original">{data.urlOriginal}</p>
       <div>
-        <p className="url-short">www.fsfsd.com</p>
+        <p className="url-short">{data.urlShort}</p>
         <button className="btn-copy-url btn-main">Copy</button>
       </div>
     </div>
-  );
-}
+  ));
 
+  return <div>{linkElements}</div>;
+}
 export default UrlResult;
