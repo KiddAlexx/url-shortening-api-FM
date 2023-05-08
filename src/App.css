@@ -152,6 +152,7 @@ a:hover {
 .url-form-container {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .url-shortening-form {
@@ -165,6 +166,7 @@ a:hover {
   gap: 2.5rem;
   border-radius: 1rem;
   transform: translateY(-8.4rem);
+  position: absolute;
 }
 
 .url-input-field {
@@ -187,12 +189,14 @@ a:hover {
 .url-results-container {
   display: flex;
   justify-content: center;
+  margin-top: 9.4rem;
 }
 
 /********************URL-Result-Component*******************/
 .link-container {
   width: 111rem;
   height: 7.2rem;
+  margin-top: 1.6rem;
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
