@@ -8,6 +8,13 @@ function UrlForm() {
   const [urlForm, setUrlForm] = useState('');
   const [urlData, setUrlData] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [copied, setCopied] = useState(false);
+
+  function copyUrl(data) {
+    navigator.clipboard.writeText(data.urlShort);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 5000);
+  }
 
   function handleChange(event) {
     const { value } = event.target;
@@ -71,10 +78,6 @@ function UrlForm() {
         );
         break;
     }
-  }
-
-  function copyUrl(data) {
-    console.log(data.urlShort);
   }
 
   return (
