@@ -8,7 +8,7 @@ function UrlResult(props) {
           onClick={() => props.handleClick(data)}
           className="btn-copy-url btn-main"
         >
-          Copy
+          {data.copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
     </div>

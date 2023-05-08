@@ -8,12 +8,22 @@ function UrlForm() {
   const [urlForm, setUrlForm] = useState('');
   const [urlData, setUrlData] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [copied, setCopied] = useState(false);
 
   function copyUrl(data) {
     navigator.clipboard.writeText(data.urlShort);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 5000);
+    setUrlData((prevUrlData) =>
+      prevUrlData.map((linkData) =>
+        linkData.id === data.id ? { ...linkData, copied: true } : linkData
+      )
+    );
+
+    setTimeout(() => {
+      setUrlData((prevUrlData) =>
+        prevUrlData.map((linkData) =>
+          linkData.id === data.id ? { ...linkData, copied: false } : linkData
+        )
+      );
+    }, 5000);
   }
 
   function handleChange(event) {
@@ -24,7 +34,7 @@ function UrlForm() {
   function generateShortUrl(data) {
     setUrlData((prevUrlData) => [
       ...prevUrlData,
-      { urlOriginal: urlForm, urlShort: data, id: nanoid() },
+      { urlOriginal: urlForm, urlShort: data, id: nanoid(), copied: false },
     ]);
     setErrorMessage(null);
     setUrlForm('');
