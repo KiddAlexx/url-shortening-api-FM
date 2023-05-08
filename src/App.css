@@ -172,6 +172,7 @@ a:hover {
 .url-input-field {
   width: 77rem;
   height: 6.5rem;
+  position: relative;
   padding-left: 3rem;
   border-radius: 1rem;
   font-family: inherit;
@@ -180,6 +181,16 @@ a:hover {
   line-height: 3.6rem;
   letter-spacing: 0.15px;
   color: var(--violet-vdark);
+}
+
+.error-message-minor {
+  position: absolute;
+  bottom: 2.6rem;
+  left: 6.4rem;
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: var(--red);
 }
 
 .btn-shorten {
@@ -209,8 +220,6 @@ a:hover {
   color: var(--violet-vdark);
 }
 
-.url-original {
-}
 .url-short {
   display: inline-block;
   color: var(--cyan);

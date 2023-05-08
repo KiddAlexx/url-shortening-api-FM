@@ -85,7 +85,7 @@ function UrlForm() {
             value={urlForm}
             className="url-input-field"
           />
-          <label htmlFor="urlFull">{errorMessage}</label>
+          <p className="error-message-minor">{errorMessage}</p>
           <button className="btn-main btn-shorten">Shorten It!</button>
         </form>
       </div>
