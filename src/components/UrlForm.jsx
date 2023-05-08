@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import UrlResult from './UrlResult';
+import { nanoid } from 'nanoid';
 
 function UrlForm() {
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
@@ -16,7 +17,7 @@ function UrlForm() {
   function generateShortUrl(data) {
     setUrlData((prevUrlData) => [
       ...prevUrlData,
-      { urlOriginal: urlForm, urlShort: data },
+      { urlOriginal: urlForm, urlShort: data, id: nanoid() },
     ]);
     setErrorMessage(null);
     setUrlForm('');
