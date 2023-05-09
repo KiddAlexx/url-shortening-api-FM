@@ -6,7 +6,9 @@ function UrlResult(props) {
         <p className="url-short">{urlObject.urlShort}</p>
         <button
           onClick={() => props.handleClick(urlObject)}
-          className="btn-copy-url btn-main"
+          className={`btn-copy-url btn-main ${
+            urlObject.copied ? 'btn-copied' : ''
+          }`}
         >
           {urlObject.copied ? 'Copied!' : 'Copy'}
         </button>

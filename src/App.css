@@ -239,3 +239,7 @@ a:hover {
   border-radius: 0.5rem;
   font-size: 1.5rem;
 }
+
+.btn-copied {
+  background-color: var(--violet-dark);
+}

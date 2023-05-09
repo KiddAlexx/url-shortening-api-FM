@@ -25,7 +25,7 @@ function UrlForm() {
             : linkData
         )
       );
-    }, 5000);
+    }, 3000);
   }
 
   function handleChange(event) {
