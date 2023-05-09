@@ -11,6 +11,12 @@ function UrlForm() {
   );
   const [errorMessage, setErrorMessage] = useState(null);
 
+  function deleteUrl(urlObject) {
+    setUrlData((prevUrlData) =>
+      prevUrlData.filter((linkData) => linkData.id !== urlObject.id)
+    );
+  }
+
   function copyUrl(urlObject) {
     navigator.clipboard.writeText(urlObject.urlShort);
     setUrlData((prevUrlData) =>
@@ -117,7 +123,11 @@ function UrlForm() {
         </form>
       </div>
       <div className="url-results-container">
-        <UrlResult urlData={urlData} handleClick={copyUrl} />
+        <UrlResult
+          urlData={urlData}
+          handleCopyClick={copyUrl}
+          handleDeleteClick={deleteUrl}
+        />
       </div>
     </main>
   );

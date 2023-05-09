@@ -5,9 +5,14 @@ function UrlResult(props) {
 
       <div>
         <p className="url-short">{urlObject.urlShort}</p>
-        <button className="btn-delete">Delete</button>
         <button
-          onClick={() => props.handleClick(urlObject)}
+          onClick={() => props.handleDeleteClick(urlObject)}
+          className="btn-delete"
+        >
+          Delete
+        </button>
+        <button
+          onClick={() => props.handleCopyClick(urlObject)}
           className={`btn-copy-url btn-main ${
             urlObject.copied ? 'btn-copied' : ''
           }`}
