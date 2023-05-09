@@ -243,3 +243,20 @@ a:hover {
 .btn-copied {
   background-color: var(--violet-dark);
 }
+
+.btn-delete {
+  margin-left: 2.4rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  background-color: var(--blue-vdark);
+  color: #ffffff;
+}
+
+.btn-delete:hover {
+  background-color: var(--red);
+  transition: background-color 0.2s;
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import UrlResult from './UrlResult';
 import { nanoid } from 'nanoid';
 
@@ -6,7 +6,9 @@ function UrlForm() {
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
 
   const [urlForm, setUrlForm] = useState('');
-  const [urlData, setUrlData] = useState([]);
+  const [urlData, setUrlData] = useState(
+    JSON.parse(localStorage.getItem('urlDataLocal')) || []
+  );
   const [errorMessage, setErrorMessage] = useState(null);
 
   function copyUrl(urlObject) {
@@ -27,6 +29,10 @@ function UrlForm() {
       );
     }, 3000);
   }
+
+  useEffect(() => {
+    localStorage.setItem('urlDataLocal', JSON.stringify(urlData));
+  }, [urlData]);
 
   function handleChange(event) {
     const { value } = event.target;
