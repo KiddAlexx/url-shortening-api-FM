@@ -295,6 +295,13 @@ a:hover {
   color: var(--gray-dark);
 }
 
+.info-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
 /********************Card-Component*******************/
 
 .info-card {
