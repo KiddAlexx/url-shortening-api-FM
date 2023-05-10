@@ -312,12 +312,29 @@ a:hover {
   border-radius: 0.5rem;
   position: relative;
 }
+.info-card:nth-child(1) {
+  --card-index: 0;
+}
 
 .info-card:nth-child(2) {
+  --card-index: 1;
   transform: translateY(4.4rem);
 }
 .info-card:nth-child(3) {
+  --card-index: 2;
   transform: translateY(8.8rem);
+}
+
+.info-card:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: calc(var(--card-index) * 4.4rem + 10.7rem);
+  transform: translateX(100%);
+  width: 3rem;
+  height: 0.8rem;
+  background-color: var(--cyan);
 }
 .info-card-icon-container {
   position: absolute;
