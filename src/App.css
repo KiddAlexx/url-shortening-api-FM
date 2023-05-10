@@ -303,7 +303,17 @@ a:hover {
   background-color: #ffffff;
   border-radius: 0.5rem;
 }
+.info-card-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--violet-dark);
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+}
 .info-card-icon {
+  width: 4rem;
 }
 .info-card-heading {
   font-size: 2.2rem;
