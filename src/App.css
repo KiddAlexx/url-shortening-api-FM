@@ -309,8 +309,12 @@ a:hover {
   height: 26.7rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
+  position: relative;
 }
 .info-card-icon-container {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 3.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,10 +330,13 @@ a:hover {
   font-size: 2.2rem;
   line-height: 3.3rem;
   color: var(--violet-vdark);
+  margin-top: 7.7rem;
+  margin-left: 3.2rem;
 }
 .info-card-content {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.6rem;
   color: var(--gray-dark);
+  margin: 1.2rem 3.2rem 4.1rem;
 }
