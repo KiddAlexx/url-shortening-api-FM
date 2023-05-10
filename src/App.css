@@ -266,13 +266,16 @@ a:hover {
   transition: background-color 0.2s;
 }
 
-/********************Statistics-Component*******************/
+/********************Features-Component*******************/
+
+.features {
+  background-color: var(--offwhite);
+}
 
 .statistics-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--offwhite);
   text-align: center;
 }
 
@@ -291,3 +294,5 @@ a:hover {
   letter-spacing: 0.1px;
   color: var(--gray-dark);
 }
+
+/********************Card-Component*******************/

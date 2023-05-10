@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import UrlForm from './components/UrlForm';
-import Statistics from './components/Statistics';
+import Features from './components/Features';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Hero />
       <UrlForm />
-      <Statistics />
+      <Features />
     </div>
   );
 }
