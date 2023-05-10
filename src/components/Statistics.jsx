@@ -1,4 +1,4 @@
-function Statistic() {
+function Statistics() {
   return (
     <section className="statistics-container">
       <h2 className="statistics-heading">Advanced Statistics</h2>
