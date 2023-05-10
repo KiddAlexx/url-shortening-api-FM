@@ -270,6 +270,7 @@ a:hover {
 
 .features {
   background-color: var(--offwhite);
+  padding-bottom: 21rem;
 }
 
 .statistics-container {
@@ -310,6 +311,13 @@ a:hover {
   background-color: #ffffff;
   border-radius: 0.5rem;
   position: relative;
+}
+
+.info-card:nth-child(2) {
+  transform: translateY(4.4rem);
+}
+.info-card:nth-child(3) {
+  transform: translateY(8.8rem);
 }
 .info-card-icon-container {
   position: absolute;
