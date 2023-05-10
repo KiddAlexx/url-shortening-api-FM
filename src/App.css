@@ -296,3 +296,23 @@ a:hover {
 }
 
 /********************Card-Component*******************/
+
+.info-card {
+  width: 35rem;
+  height: 26.7rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+.info-card-icon {
+}
+.info-card-heading {
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: var(--violet-vdark);
+}
+.info-card-content {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: var(--gray-dark);
+}
