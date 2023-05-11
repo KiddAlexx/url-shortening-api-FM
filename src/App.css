@@ -406,6 +406,21 @@ a:hover {
   display: flex;
   gap: 11.5rem;
 }
+.footer-nav-heading {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+}
+
+.footer-nav-items a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.23px;
+  color: var(--gray-dark);
+}
 
 .socials-container {
   display: flex;
