@@ -422,7 +422,21 @@ a:hover {
   color: var(--gray-dark);
 }
 
+.footer-nav-items a:hover {
+  color: var(--cyan);
+  transition: color 0.2s;
+}
+
 .socials-container {
   display: flex;
   gap: 2.4rem;
+}
+.socials-container a {
+  fill: #ffffff;
+  transition: fill 0.2s;
+}
+
+.socials-container a:hover {
+  fill: var(--cyan);
+  transition: fill 0.2s;
 }
