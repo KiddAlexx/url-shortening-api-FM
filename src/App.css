@@ -387,3 +387,9 @@ a:hover {
   color: #ffffff;
   margin-bottom: 3.2rem;
 }
+
+/********************Footer-Component*******************/
+
+.footer-container {
+  background-color: var(--violet-vdark);
+}

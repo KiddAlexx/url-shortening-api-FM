@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import UrlForm from './components/UrlForm';
 import Features from './components/Features';
 import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <UrlForm />
       <Features />
       <CallToAction />
+      <Footer />
     </div>
   );
 }
