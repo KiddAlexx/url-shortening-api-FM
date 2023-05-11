@@ -1,10 +1,14 @@
 function UrlResult(props) {
   const linkElements = props.urlData.map((urlObject) => (
     <div className="link-container" key={urlObject.id}>
-      <p className="url-original">{urlObject.urlOriginal}</p>
+      <a className="url-original" href={urlObject.urlOriginal}>
+        {urlObject.urlOriginal}
+      </a>
 
       <div>
-        <p className="url-short">{urlObject.urlShort}</p>
+        <a className="url-short" href={urlObject.urlShort}>
+          {urlObject.urlShort}
+        </a>
         <button
           onClick={() => props.handleDeleteClick(urlObject)}
           className="btn-main btn-delete"

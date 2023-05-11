@@ -238,10 +238,11 @@ a:hover {
   overflow-wrap: break-word;
 }
 
-.url-short {
+.link-container .url-short {
   display: inline-block;
   color: var(--cyan);
 }
+
 .btn-copy-url {
   margin-left: 2.4rem;
   width: 10rem;
