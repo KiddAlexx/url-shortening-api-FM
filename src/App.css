@@ -380,6 +380,7 @@ a:hover {
   height: 25rem;
   background-image: url('./assets/imgs/bg-boost-desktop.svg');
   background-color: var(--violet-dark);
+  background-size: cover;
 }
 
 .heading-call-to-action {
