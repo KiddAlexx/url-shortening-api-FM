@@ -392,4 +392,22 @@ a:hover {
 
 .footer-container {
   background-color: var(--violet-vdark);
+  display: flex;
+  justify-content: space-around;
+  max-width: 144rem;
+  height: 31rem;
+}
+
+.logo-footer {
+  fill: #ffffff;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 11.5rem;
+}
+
+.socials-container {
+  display: flex;
+  gap: 2.4rem;
 }
