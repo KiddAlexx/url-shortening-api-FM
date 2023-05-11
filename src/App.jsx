@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import UrlForm from './components/UrlForm';
 import Features from './components/Features';
+import CallToAction from './components/CallToAction';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <UrlForm />
       <Features />
+      <CallToAction />
     </div>
   );
 }

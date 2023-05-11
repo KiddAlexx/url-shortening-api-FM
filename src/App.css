@@ -271,6 +271,7 @@ a:hover {
 .features {
   background-color: var(--offwhite);
   padding-bottom: 21rem;
+  max-width: 144rem;
 }
 
 .statistics-container {
@@ -364,4 +365,25 @@ a:hover {
   line-height: 2.6rem;
   color: var(--gray-dark);
   margin: 1.2rem 3.2rem 4.1rem;
+}
+
+/********************Call-To-Action-Component*******************/
+
+.section-call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  max-width: 144rem;
+  background-image: url('./assets/imgs/bg-boost-desktop.svg');
+  background-color: var(--violet-dark);
+}
+
+.heading-call-to-action {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
 }
