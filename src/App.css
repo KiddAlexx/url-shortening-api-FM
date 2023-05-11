@@ -66,7 +66,6 @@ a:hover {
 /*******************Header-Component******************/
 
 .main-nav {
-  max-width: 144rem;
   display: flex;
   justify-content: space-between;
   padding: 4.8rem 16.5rem;
@@ -111,7 +110,6 @@ a:hover {
 .hero-container {
   overflow: hidden;
   display: flex;
-  max-width: 144rem;
   height: 66.4rem;
 }
 .hero-content {
@@ -149,7 +147,6 @@ a:hover {
 /********************URL-Form-Component*******************/
 
 .url-app-container {
-  max-width: 144rem;
   padding-bottom: 10rem;
   background-color: var(--offwhite);
 }
@@ -161,8 +158,10 @@ a:hover {
 }
 
 .url-shortening-form {
-  width: 111rem;
+  max-width: 111rem;
   height: 16.8rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
   background-image: url('./assets/imgs/bg-shorten-desktop.svg');
   background-color: var(--violet-dark);
   display: flex;
@@ -277,7 +276,6 @@ a:hover {
 .features {
   background-color: var(--offwhite);
   padding-bottom: 21rem;
-  max-width: 144rem;
 }
 
 .statistics-container {
@@ -380,7 +378,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 25rem;
-  max-width: 144rem;
   background-image: url('./assets/imgs/bg-boost-desktop.svg');
   background-color: var(--violet-dark);
 }
@@ -399,7 +396,6 @@ a:hover {
   background-color: #232127;
   display: flex;
   justify-content: space-around;
-  max-width: 144rem;
   height: 31rem;
   padding: 7.2rem;
 }
