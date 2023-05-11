@@ -391,11 +391,12 @@ a:hover {
 /********************Footer-Component*******************/
 
 .footer-container {
-  background-color: var(--violet-vdark);
+  background-color: #232127;
   display: flex;
   justify-content: space-around;
   max-width: 144rem;
   height: 31rem;
+  padding: 7.2rem;
 }
 
 .logo-footer {
@@ -405,21 +406,24 @@ a:hover {
 .footer-nav {
   display: flex;
   gap: 11.5rem;
+  transform: translateX(6.5rem);
 }
 .footer-nav-heading {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: -0.25px;
+  margin-bottom: 2.2rem;
   color: #ffffff;
 }
 
-.footer-nav-items a {
+.footer-nav-items li {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.2rem;
   letter-spacing: -0.23px;
-  color: var(--gray-dark);
+  margin-bottom: 1rem;
+  color: #bfbfbf;
 }
 
 .footer-nav-items a:hover {
