@@ -7,7 +7,7 @@ function UrlResult(props) {
         <p className="url-short">{urlObject.urlShort}</p>
         <button
           onClick={() => props.handleDeleteClick(urlObject)}
-          className="btn-delete"
+          className="btn-main btn-delete"
         >
           Delete
         </button>

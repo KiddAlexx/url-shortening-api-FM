@@ -57,6 +57,11 @@ a:hover {
   background-color: var(--cyan-light);
   transition: background-color 0.2s;
 }
+.btn-main:active {
+  background-color: var(--cyan-light);
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
 
 /*******************Header-Component******************/
 
@@ -316,7 +321,6 @@ a:hover {
 .info-card:nth-child(1) {
   --card-index: 0;
 }
-
 .info-card:nth-child(2) {
   --card-index: 1;
   transform: translateY(4.4rem);
