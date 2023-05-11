@@ -1,12 +1,12 @@
 function UrlResult(props) {
   const linkElements = props.urlData.map((urlObject) => (
     <div className="link-container" key={urlObject.id}>
-      <a className="url-original" href={urlObject.urlOriginal}>
+      <a className="url-original" href={`http://${urlObject.urlOriginal}`}>
         {urlObject.urlOriginal}
       </a>
 
       <div>
-        <a className="url-short" href={urlObject.urlShort}>
+        <a className="url-short" href={`http://${urlObject.urlShort}`}>
           {urlObject.urlShort}
         </a>
         <button
