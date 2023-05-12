@@ -229,7 +229,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding-left: 3.2rem;
+  padding-left: 2.4rem;
   padding-right: 2.4rem;
   font-size: 2rem;
   letter-spacing: 0.15px;
@@ -293,6 +293,8 @@ a:hover {
 .features {
   background-color: var(--offwhite);
   padding-bottom: 21rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
 .statistics-container {
