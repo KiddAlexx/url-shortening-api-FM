@@ -51,6 +51,7 @@ a:hover {
   font-weight: 700;
   font-size: 2rem;
   line-height: 3rem;
+  flex-shrink: 0;
 }
 
 .btn-main:hover {
@@ -147,6 +148,8 @@ a:hover {
 /********************URL-Form-Component*******************/
 
 .url-app-container {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
   padding-bottom: 10rem;
   background-color: var(--offwhite);
 }
@@ -158,7 +161,7 @@ a:hover {
 }
 
 .url-shortening-form {
-  max-width: 111rem;
+  width: clamp(32.7rem, 100%, 111rem);
   height: 16.8rem;
   padding-left: 6.5rem;
   padding-right: 6.5rem;
@@ -174,7 +177,7 @@ a:hover {
 }
 
 .url-input-field {
-  width: 77rem;
+  width: clamp(27.9rem, 100%, 77rem);
   height: 6.5rem;
   position: relative;
   padding-left: 3rem;
