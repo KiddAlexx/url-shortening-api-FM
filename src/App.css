@@ -214,13 +214,14 @@ a:hover {
   border-radius: 1rem;
 }
 
+/********************URL-Result-Component*******************/
+
 .url-results-container {
   display: flex;
   justify-content: center;
   margin-top: 9.4rem;
 }
 
-/********************URL-Result-Component*******************/
 .link-container {
   min-height: 7.2rem;
   margin-top: 1.6rem;
