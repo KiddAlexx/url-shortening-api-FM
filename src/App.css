@@ -222,7 +222,6 @@ a:hover {
 
 /********************URL-Result-Component*******************/
 .link-container {
-  width: 111rem;
   min-height: 7.2rem;
   margin-top: 1.6rem;
   border-radius: 0.5rem;
@@ -237,8 +236,21 @@ a:hover {
   color: var(--violet-vdark);
 }
 
-.url-original {
+.link-container-2 {
+  width: clamp(32.7rem, 100%, 111rem);
+}
+
+.link-container-left {
+  width: clamp(11.7rem, 100%, 45rem);
   max-width: 58rem;
+}
+
+.link-container-right {
+  display: flex;
+  align-items: center;
+}
+
+.url-original {
   overflow-wrap: break-word;
 }
 

@@ -15,11 +15,12 @@ function UrlResult(props) {
         damping: 30,
       }}
     >
-      <a className="url-original" href={`http://${urlObject.urlOriginal}`}>
-        {urlObject.urlOriginal}
-      </a>
-
-      <div>
+      <div className="link-container-left">
+        <a className="url-original" href={`http://${urlObject.urlOriginal}`}>
+          {urlObject.urlOriginal}
+        </a>
+      </div>
+      <div className="link-container-right">
         <a className="url-short" href={`http://${urlObject.urlShort}`}>
           {urlObject.urlShort}
         </a>
@@ -41,7 +42,7 @@ function UrlResult(props) {
     </motion.div>
   ));
 
-  return <div>{linkElements}</div>;
+  return <div className="link-container-2">{linkElements}</div>;
 }
 
 export default UrlResult;
