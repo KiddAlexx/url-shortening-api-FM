@@ -1,2 +1,79 @@
 @media (max-width: 23.44em) /* 375px */ {
+  /*******************Header-Component******************/
+
+  .main-nav {
+    padding: 4rem 1.7rem 2.3rem 3.1rem;
+    /*     font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--gray-dark); */
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+  /* hide for menu, alter settings later */
+  .nav-menu-items {
+    display: none;
+    align-items: center;
+    gap: 3rem;
+  }
+  /* Hide for menu, alter settings later */
+  .auth-buttons {
+    display: none;
+    align-items: center;
+    gap: 3.7rem;
+  }
+
+  /* also adjust later in menu */
+
+  /*   .btn-signup {
+    width: 10.5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  } */
+
+  /********************Hero-Component*******************/
+
+  .hero-container {
+    display: grid;
+    justify-content: center;
+    /* height: 66.4rem; */
+  }
+  .hero-content {
+    padding-top: 0rem; /* changed */
+    padding-left: 0rem; /* changed */
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 16.8rem;
+    text-align: center;
+    /*  margin-bottom: 18rem; /* changed */
+  }
+
+  .hero-content h1 {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    letter-spacing: -1px; /* all changed */
+  }
+  .hero-content p {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.12px; /* all but margin changed */
+  }
+  .hero-content button {
+    /*  margin-top: 3.8rem; */
+  }
+
+  .hero-img {
+    grid-row: 1/2;
+    max-width: 46rem; /* changed */
+    max-height: 48rem;
+    padding-top: 3rem;
+    justify-self: center;
+    transform: translateX(8.4rem);
+  }
 }

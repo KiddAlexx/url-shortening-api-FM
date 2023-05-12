@@ -108,13 +108,13 @@ a:hover {
 /********************Hero-Component*******************/
 
 .hero-container {
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
-  height: 66.4rem;
 }
 .hero-content {
   padding-top: 8.8rem;
   padding-left: 16.5rem;
+  padding-bottom: 22.2rem;
 }
 
 .hero-content h1 {
