@@ -1,4 +1,5 @@
 import './App.css';
+import './queries.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import UrlForm from './components/UrlForm';
