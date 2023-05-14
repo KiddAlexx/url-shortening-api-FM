@@ -163,7 +163,7 @@ a:hover {
 }
 
 .url-shortening-form {
-  width: clamp(32.7rem, 100%, 111rem);
+  width: clamp(24rem, 100%, 111rem);
   height: 16.8rem;
   padding-left: 6.5rem;
   padding-right: 6.5rem;
@@ -179,7 +179,7 @@ a:hover {
 }
 
 .url-input-field {
-  width: clamp(27.9rem, 100%, 77rem);
+  width: clamp(10rem, 100%, 77rem);
   height: 6.5rem;
   position: relative;
   padding-left: 3rem;
