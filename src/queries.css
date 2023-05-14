@@ -296,7 +296,6 @@
   width: 3rem;
   height: 0.8rem;
   background-color: var(--cyan); */
-    right: 0;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 100%);
@@ -336,5 +335,33 @@
   color: var(--gray-dark);
   margin: 1.2rem 3.2rem 4.1rem; */
     text-align: center;
+  }
+
+  /********************Call-To-Action-Component*******************/
+
+  .section-call-to-action {
+    /*    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    background-image: url('./assets/imgs/bg-boost-desktop.svg');
+    background-color: var(--violet-dark);
+    background-size: cover; */
+    height: 30rem;
+    background-image: url('./assets/imgs/bg-boost-mobile.svg');
+  }
+
+  .heading-call-to-action {
+    /*   font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 3.2rem; */
+
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: -0.7px;
+    margin-bottom: 1.6rem;
   }
 }
