@@ -141,7 +141,6 @@ a:hover {
 }
 
 .hero-img {
-  max-width: 73.3rem;
   max-height: 48rem;
   padding-top: 3rem;
   transform: translateX(12.3rem);
@@ -429,7 +428,9 @@ a:hover {
 
 .footer-nav {
   display: flex;
-  gap: 11.5rem;
+  /*   gap: 11.5rem; */
+  justify-content: space-between;
+  width: clamp(20rem, 100%, 46rem);
   transform: translateX(6.5rem);
 }
 .footer-nav-heading {
