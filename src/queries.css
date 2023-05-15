@@ -82,6 +82,20 @@
 
   /********************URL-Form-Component*******************/
 
+  .url-app-container {
+    /*   padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 10rem;
+  background-color: var(--offwhite); */
+    padding-bottom: 8rem;
+  }
+
+  .url-form-container {
+    /*   display: flex;
+    justify-content: center;
+    position: relative; */
+  }
+
   .url-shortening-form {
     /*     width: clamp(32.7rem, 100%, 111rem);
     height: 16.8rem;
@@ -245,6 +259,8 @@
   padding-bottom: 21rem;
   padding-left: 2.4rem;
   padding-right: 2.4rem; */
+
+    padding-bottom: 17rem;
   }
 
   .statistics-container {
