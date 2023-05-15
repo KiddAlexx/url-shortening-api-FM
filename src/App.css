@@ -382,6 +382,7 @@ a:hover {
   color: var(--violet-vdark);
   margin-top: 7.7rem;
   margin-left: 3.2rem;
+  margin-right: 3.2rem;
 }
 .info-card-content {
   font-weight: 500;
