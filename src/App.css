@@ -168,6 +168,7 @@ a:hover {
   padding-left: 6.5rem;
   padding-right: 6.5rem;
   background-image: url('./assets/imgs/bg-shorten-desktop.svg');
+  background-size: cover;
   background-color: var(--violet-dark);
   display: flex;
   justify-content: center;

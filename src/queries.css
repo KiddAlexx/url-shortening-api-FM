@@ -116,6 +116,7 @@
     min-height: 16.8rem;
     gap: 1rem;
     align-items: start;
+    background-image: url('./assets/imgs/bg-shorten-mobile.svg');
   }
 
   .btn-shorten {
