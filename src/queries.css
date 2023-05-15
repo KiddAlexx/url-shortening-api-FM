@@ -364,4 +364,70 @@
     letter-spacing: -0.7px;
     margin-bottom: 1.6rem;
   }
+
+  /********************Footer-Component*******************/
+
+  .footer-container {
+    /*   background-color: #232127;
+  display: flex;
+  justify-content: space-around;
+  height: 31rem;
+  padding: 7.2rem; */
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 5.4rem;
+  }
+
+  .logo-footer {
+    /*  fill: #ffffff; */
+  }
+
+  .footer-nav {
+    /*   display: flex;
+  gap: 11.5rem;
+  transform: translateX(6.5rem); */
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    transform: translate(0);
+    text-align: center;
+    margin: 4.9rem 0;
+  }
+  .footer-nav-heading {
+    /*   font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.25px;
+  margin-bottom: 2.2rem;
+  color: #ffffff; */
+  }
+
+  .footer-nav-items li {
+    /*   font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.23px;
+  margin-bottom: 1rem;
+  color: #bfbfbf; */
+  }
+
+  .footer-nav-items a:hover {
+    /*  color: var(--cyan);
+  transition: color 0.2s; */
+  }
+
+  .socials-container {
+    /*  display: flex;
+  gap: 2.4rem; */
+  }
+  .socials-container a {
+    /*  fill: #ffffff;
+  transition: fill 0.2s; */
+  }
+
+  .socials-container a:hover {
+    /*   fill: var(--cyan);
+  transition: fill 0.2s; */
+  }
 }
