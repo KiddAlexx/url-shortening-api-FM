@@ -244,11 +244,15 @@
     line-height: 2.2rem;
     color: var(--gray-dark); */
     padding: 4rem 2.4rem 2.3rem 2.4rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
   .menu-auth-container {
     /*     display: flex;
     justify-content: space-between;
     width: 100%; */
+    padding: 4rem 2.4rem;
     position: absolute;
     top: 9.6rem;
     left: 50%;
@@ -259,7 +263,7 @@
     width: 87.2%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     z-index: 5;
     display: none;
   }
@@ -268,22 +272,33 @@
     display: flex;
   }
 
+  .btn-mobile-menu {
+    /* ********temp****** */
+    display: block;
+  }
+
   .main-nav a:hover {
     /*  color: var(--violet-vdark);
     transition: color 0.2s; */
+    color: var(--cyan);
   }
 
   .nav-left {
     /*     display: flex;
     align-items: center;
     gap: 4.5rem; */
+    width: 100%;
+    justify-content: center;
   }
 
   .nav-menu-items {
     /*    display: flex;
     align-items: center;
     gap: 3rem; */
+    width: 100%;
     flex-direction: column;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--gray-opacity);
   }
 
   .auth-buttons {
@@ -291,6 +306,7 @@
     align-items: center;
     gap: 3.7rem; */
     flex-direction: column;
+    margin-top: 3.2rem;
   }
 
   .btn-signup {
@@ -298,6 +314,8 @@
     height: 4rem;
     font-size: 1.5rem;
     line-height: 2.2rem; */
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
 
   /********************Hero-Component*******************/

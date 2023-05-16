@@ -45,7 +45,7 @@ function Header() {
           </li>
         </ul>
       </div>
-      <button className="btn-main" onClick={toggleMenu}>
+      <button className="btn-main btn-mobile-menu" onClick={toggleMenu}>
         Menu
       </button>
     </nav>
