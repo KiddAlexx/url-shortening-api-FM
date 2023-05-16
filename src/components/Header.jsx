@@ -1,5 +1,6 @@
 import shortlyLogo from '../assets/imgs/logo.svg';
 import { useState } from 'react';
+import { Squash as Hamburger } from 'hamburger-react';
 
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
@@ -45,9 +46,11 @@ function Header() {
           </li>
         </ul>
       </div>
-      <button className="btn-main btn-mobile-menu" onClick={toggleMenu}>
-        Menu
-      </button>
+      <Hamburger
+        color="#9e9aa8"
+        className="btn-mobile-menu"
+        onToggle={toggleMenu}
+      />
     </nav>
   );
 }

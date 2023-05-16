@@ -247,6 +247,7 @@
     color: #ffffff;
     font-size: 1.8rem;
     line-height: 2.8rem;
+    justify-content: space-between;
   }
   .menu-auth-container {
     /*     display: flex;
@@ -272,8 +273,7 @@
     display: flex;
   }
 
-  .btn-mobile-menu {
-    /* ********temp****** */
+  .hamburger-react {
     display: block;
   }
 

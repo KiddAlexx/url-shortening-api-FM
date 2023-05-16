@@ -42,10 +42,6 @@ a:hover {
 }
 
 /********************Reusable Styles*******************/
-.btn-mobile-menu {
-  /* ********temp****** */
-  display: none;
-}
 
 .btn-main {
   background-color: var(--cyan);
@@ -118,6 +114,10 @@ a:hover {
   line-height: 2.2rem;
 }
 
+/********************Hamburger-Menu*******************/
+.hamburger-react {
+  display: none;
+}
 /********************Hero-Component*******************/
 
 .hero-container {
