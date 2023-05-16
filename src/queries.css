@@ -261,6 +261,11 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
+    display: none;
+  }
+
+  .mobile-menu-open {
+    display: flex;
   }
 
   .main-nav a:hover {
@@ -294,15 +299,6 @@
     font-size: 1.5rem;
     line-height: 2.2rem; */
   }
-
-  /* also adjust later in menu */
-
-  /*   .btn-signup {
-    width: 10.5rem;
-    height: 4rem;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-  } */
 
   /********************Hero-Component*******************/
 

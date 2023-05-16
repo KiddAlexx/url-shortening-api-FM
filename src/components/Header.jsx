@@ -1,6 +1,14 @@
 import shortlyLogo from '../assets/imgs/logo.svg';
+import { useState } from 'react';
 
 function Header() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  function toggleMenu() {
+    setMenuActive((prevState) => !prevState);
+    console.log(menuActive);
+  }
+
   return (
     <nav className="main-nav">
       <img
@@ -8,7 +16,11 @@ function Header() {
         alt="Simple logo of company name - Shortly"
         className="logo"
       />
-      <div className="menu-auth-container">
+      <div
+        className={`menu-auth-container ${
+          menuActive ? 'mobile-menu-open' : ''
+        }`}
+      >
         <div className="nav-left">
           <ul className="nav-menu-items">
             <li>
@@ -33,6 +45,9 @@ function Header() {
           </li>
         </ul>
       </div>
+      <button className="btn-main" onClick={toggleMenu}>
+        Menu
+      </button>
     </nav>
   );
 }
