@@ -40,7 +40,7 @@ function Header() {
               Login
             </a>
           </li>
-          <li>
+          <li className="btn-signup-container">
             <button className="btn-signup btn-main">Sign Up</button>
           </li>
         </ul>

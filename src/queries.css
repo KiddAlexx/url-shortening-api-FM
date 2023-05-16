@@ -307,6 +307,11 @@
     gap: 3.7rem; */
     flex-direction: column;
     margin-top: 3.2rem;
+    width: 100%;
+  }
+
+  .btn-signup-container {
+    width: 100%;
   }
 
   .btn-signup {
@@ -316,6 +321,8 @@
     line-height: 2.2rem; */
     font-size: 1.8rem;
     line-height: 2.7rem;
+    height: 4.8rem;
+    width: 100%;
   }
 
   /********************Hero-Component*******************/
