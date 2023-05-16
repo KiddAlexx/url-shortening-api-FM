@@ -48,6 +48,7 @@ function Header() {
       </div>
       <Hamburger
         color="#9e9aa8"
+        easing="ease-in"
         className="btn-mobile-menu"
         onToggle={toggleMenu}
       />
