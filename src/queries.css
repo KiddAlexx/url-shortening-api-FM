@@ -234,29 +234,65 @@
   /*******************Header-Component******************/
 
   .main-nav {
-    padding: 4rem 1.7rem 2.3rem 3.1rem;
-    /*     font-weight: 700;
+    /*     display: flex;
+    align-items: center; */
+    /*  justify-content: space-between; */
+    /*     gap: 3rem;
+    padding: 4.8rem 16.5rem;
+    font-weight: 700;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: var(--gray-dark); */
+    padding: 4rem 2.4rem 2.3rem 2.4rem;
+  }
+  .menu-auth-container {
+    /*     display: flex;
+    justify-content: space-between;
+    width: 100%; */
+    position: absolute;
+    top: 9.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    background-color: var(--violet-dark);
+    height: 38.3rem;
+    width: 87.2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .main-nav a:hover {
+    /*  color: var(--violet-vdark);
+    transition: color 0.2s; */
   }
 
   .nav-left {
-    display: flex;
+    /*     display: flex;
     align-items: center;
-    gap: 4.5rem;
+    gap: 4.5rem; */
   }
-  /* hide for menu, alter settings later */
+
   .nav-menu-items {
-    display: none;
+    /*    display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 3rem; */
+    flex-direction: column;
   }
-  /* Hide for menu, alter settings later */
+
   .auth-buttons {
-    display: none;
+    /*    display: flex;
     align-items: center;
-    gap: 3.7rem;
+    gap: 3.7rem; */
+    flex-direction: column;
+  }
+
+  .btn-signup {
+    /*     width: 10.5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem; */
   }
 
   /* also adjust later in menu */
