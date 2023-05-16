@@ -1,4 +1,29 @@
 @media (max-width: 71.88rem) {
+  /*******************Hero-Component******************/
+
+  .hero-img {
+    grid-row: 1/2;
+    max-width: 100%; /* changed */
+
+    justify-self: center;
+    transform: translateX(8.4rem);
+  }
+
+  .hero-container {
+    display: grid;
+    justify-content: center;
+    /* height: 66.4rem; */
+  }
+  .hero-content {
+    padding-top: 0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 16.8rem;
+    text-align: center;
+    margin-top: 3.7rem;
+  }
+
+  /*******************Footer-Component******************/
   .footer-nav {
     transform: translateX(0);
   }
@@ -344,21 +369,6 @@
 @media (max-width: 32rem) /* 375px */ {
   /********************Hero-Component*******************/
 
-  .hero-container {
-    display: grid;
-    justify-content: center;
-    /* height: 66.4rem; */
-  }
-  .hero-content {
-    padding-top: 0rem; /* changed */
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-    padding-bottom: 16.8rem;
-    text-align: center;
-    margin-top: 3.7rem;
-    /*  margin-bottom: 18rem; /* changed */
-  }
-
   .hero-content h1 {
     font-size: 4.2rem;
     line-height: 4.8rem;
@@ -372,17 +382,11 @@
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
-  .hero-content button {
-    /*  margin-top: 3.8rem; */
-  }
 
   .hero-img {
-    grid-row: 1/2;
-    max-width: 46rem; /* changed */
+    max-width: 46rem;
     max-height: 48rem;
     padding-top: 3rem;
-    justify-self: center;
-    transform: translateX(8.4rem);
   }
 
   /********************Features-Component*******************/
