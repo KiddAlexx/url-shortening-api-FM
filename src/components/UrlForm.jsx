@@ -3,20 +3,28 @@ import UrlResult from './UrlResult';
 import { nanoid } from 'nanoid';
 
 function UrlForm() {
+  // Store route for URL Shortening API
   const API_SHRTCODE = 'https://api.shrtco.de/v2/shorten?url=';
-
+  // Initialise state variables
   const [urlForm, setUrlForm] = useState('');
+  // Initialise as empty array if value does not exist in local storage
   const [urlData, setUrlData] = useState(
     JSON.parse(localStorage.getItem('urlDataLocal')) || []
   );
   const [errorMessage, setErrorMessage] = useState(null);
 
+  // Function to entry in urlData - Passed to UrlResult component
+  // Recieves urlObject from UrlResult Component
+  // Filter urlData - removing object with matching id
   function deleteUrl(urlObject) {
     setUrlData((prevUrlData) =>
       prevUrlData.filter((linkData) => linkData.id !== urlObject.id)
     );
   }
 
+  // Function to copy short link to clipboard
+  // Sets copied proery in urlData to true - Used to change text of copy button to copied
+  // Reverts copied property to false after 3 seconds
   function copyUrl(urlObject) {
     navigator.clipboard.writeText(urlObject.urlShort);
     setUrlData((prevUrlData) =>
@@ -36,25 +44,21 @@ function UrlForm() {
     }, 3000);
   }
 
+  // Update local storage whenever urlData changes
   useEffect(() => {
     localStorage.setItem('urlDataLocal', JSON.stringify(urlData));
   }, [urlData]);
 
+  // Function to handle input change in the form
+  // Updates the value of the urlForm state variable with the input value
   function handleChange(event) {
     const { value } = event.target;
     setUrlForm(value);
   }
 
-  function generateShortUrl(data) {
-    setUrlData((prevUrlData) => [
-      ...prevUrlData,
-      { urlOriginal: urlForm, urlShort: data, id: nanoid(), copied: false },
-    ]);
-    setErrorMessage(null);
-    setUrlForm('');
-    console.log(urlData);
-  }
-
+  // Function to handle form submission
+  // Sends request to API with provided URL
+  // Checks response status, then runs function to generate short url or error message
   async function handleSubmit(event) {
     try {
       event.preventDefault();
@@ -63,12 +67,26 @@ function UrlForm() {
       data.ok
         ? generateShortUrl(data.result.short_link)
         : generateErrorMessage(data);
-      /*  console.log(data); */
     } catch (error) {
       console.log(error);
     }
   }
 
+  // Function to generate short url
+  // Recieves data from handleSubmit and creates a new entry in urlData
+  // Uses nanoid to generate unique id
+  function generateShortUrl(data) {
+    setUrlData((prevUrlData) => [
+      ...prevUrlData,
+      { urlOriginal: urlForm, urlShort: data, id: nanoid(), copied: false },
+    ]);
+    setErrorMessage(null);
+    setUrlForm('');
+  }
+
+  // Function to generate error message
+  // Uses shrtcodes's built in error messages
+  // Recieves data from handle submit and sets errorMessage state variable
   function generateErrorMessage(data) {
     const error = data.error_code;
     switch (error) {
