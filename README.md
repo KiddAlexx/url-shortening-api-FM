@@ -57,7 +57,9 @@ For this project I used Trello to manage my workflow. This was the first time us
 
 ### What I learned
 
-I discovered a new use for variables within CSS by assigning a variable within an element and then using that variable in a calculation within a pseudo-element, as demonstrated below:
+This is my first React application, following the completion of Scrimbas basic React course. I found it to be a perfect match for the topics which were covered in that course, and to put all of those techniques into practice. This defintely helped me strengthen those skills and build some confidence with React.
+
+I also discovered a new use for variables within CSS by assigning a variable within an element and then using that variable in a calculation within a pseudo-element, as demonstrated below:
 
 ```css
 .proud-of-this-css .info-card:nth-child(1) {
