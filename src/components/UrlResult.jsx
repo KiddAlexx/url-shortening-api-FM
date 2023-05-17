@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 
+// Component to display the list of shortened URLs
 function UrlResult(props) {
   const linkElements = props.urlData.map((urlObject) => (
+    //Uses Framer Motion to animate removal of results
     <motion.div
       className="link-container"
       key={urlObject.id}
