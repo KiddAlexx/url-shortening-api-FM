@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify - Live Site](https://shortly-kiddalexx.netlify.app/)
 
 ## My process
 
@@ -94,5 +94,5 @@ My plan is to create a few more simple React applications to further strengthen 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@KiddAlexx](https://www.frontendmentor.io/profile/KiddAlexx)
+- Twitter - [@KiddAlexxCodes](https://www.https://twitter.com/KiddAlexxCodes)
