@@ -62,7 +62,7 @@ This is my first React application, following the completion of Scrimbas basic R
 I also discovered a new use for variables within CSS by assigning a variable within an element and then using that variable in a calculation within a pseudo-element, as demonstrated below:
 
 ```css
-.proud-of-this-css .info-card:nth-child(1) {
+.info-card:nth-child(1) {
   --card-index: 0;
 }
 .info-card:nth-child(2) {
