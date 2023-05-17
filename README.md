@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor - My Solution](https://www.frontendmentor.io/solutions/responsive-url-shortening-app-built-with-react-vite-48bweqqqCT)
 - Live Site URL: [Netlify - Live Site](https://shortly-kiddalexx.netlify.app/)
 
 ## My process
