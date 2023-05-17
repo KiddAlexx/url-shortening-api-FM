@@ -2,11 +2,11 @@ import shortlyLogo from '../assets/imgs/logo.svg';
 import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 
-/* State variable for mobile menu */
+//State variable for mobile menu
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
 
-  /* Function to toggle menuActive variable, for use with hamburger menu */
+  //Function to toggle menuActive variable, for use with hamburger menu
   function toggleMenu() {
     setMenuActive((prevState) => !prevState);
   }
