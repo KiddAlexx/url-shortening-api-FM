@@ -16,7 +16,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ## Overview
 
-As well as the requirments listed below in the challenge, I also added the option to be able to delete any result from the list. I used some basic functionality of Framer Motion to animate the removal of these results and I also used an animated hamburger icon library.
+As well as the requirments listed below in the challenge, I also added an additional feature that allow users to delete any result from the list. I used some basic functionality of Framer Motion to animate the removal of these results and also incorporated an animated hamburger icon library.
 
 - [Framer - Motion](https://www.framer.com/motion/)
 - [Animated Hamburger Library](https://hamburger-react.netlify.app/)
@@ -43,7 +43,7 @@ Users should be able to:
 
 ## My process
 
-For this project I used Trello to manage my workflow. This was the first time using it, and I found it very useful to be able to create cards for each component, and then add a checklist of things to do within each component.
+For this project I used Trello to manage my workflow. This was the first time using it, and I found it very useful to be able to create cards for each component, and then add a checklist of tasks to complete within each component.
 
 ### Built with
 
@@ -57,7 +57,7 @@ For this project I used Trello to manage my workflow. This was the first time us
 
 ### What I learned
 
-Learnt a new use for variables within CSS by assigning a variable withing an element and then using that variable in a calculation within a pseudo element, as can be seen below.
+I discovered a new use for variables within CSS by assigning a variable within an element and then using that variable in a calculation within a pseudo-element, as demonstrated below:
 
 ```css
 .proud-of-this-css .info-card:nth-child(1) {
@@ -88,7 +88,7 @@ Learnt a new use for variables within CSS by assigning a variable withing an ele
 
 ### Continued development
 
-Create a few more simple React applications before moving on to learn more advanced React topics.
+My plan is to create a few more simple React applications to further strengthen my skills before delving into more advanced React topics.
 
 ## Author
 
