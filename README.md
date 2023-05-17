@@ -86,28 +86,6 @@ Learnt a new use for variables within CSS by assigning a variable withing an ele
 }
 ```
 
-```js
-// Function to copy short link to clipboard
-// Sets copied proery in urlData to true - Used to change text of copy button to copied
-// Reverts copied property to false after 3 seconds
-function copyUrl(urlObject) {
-  navigator.clipboard.writeText(urlObject.urlShort);
-  setUrlData((prevUrlData) =>
-    prevUrlData.map((linkData) =>
-      linkData.id === urlObject.id ? { ...linkData, copied: true } : linkData
-    )
-  );
-
-  setTimeout(() => {
-    setUrlData((prevUrlData) =>
-      prevUrlData.map((linkData) =>
-        linkData.id === urlObject.id ? { ...linkData, copied: false } : linkData
-      )
-    );
-  }, 3000);
-}
-```
-
 ### Continued development
 
 Create a few more simple React applications before moving on to learn more advanced React topics.
