@@ -43,7 +43,7 @@ Users should be able to:
 
 ## My process
 
-For this project I used Trello to managage my workflow. This was the first time using it, and I found it very useful to be able to create cards for each component, and then add a checklist of things to do within each component.
+For this project I used Trello to manage my workflow. This was the first time using it, and I found it very useful to be able to create cards for each component, and then add a checklist of things to do within each component.
 
 ### Built with
 
