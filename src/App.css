@@ -233,6 +233,7 @@ a:hover {
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
   align-items: center;
   background-color: #ffffff;
   padding-left: 2.4rem;
@@ -247,7 +248,8 @@ a:hover {
 }
 
 .link-container-left {
-  width: clamp(11.7rem, 100%, 45rem);
+  flex: 1; /* Allow the left container to grow and shrink as needed */
+  min-width: 0; /* Prevent the left container from overflowing */
 }
 
 .link-container-right {
