@@ -1,9 +1,3 @@
-import shortlyLogo from '../assets/imgs/logo.svg';
-import facebookIcon from '../assets/imgs/icon-facebook.svg';
-import twitterIcon from '../assets/imgs/icon-twitter.svg';
-import pinterestIcon from '../assets/imgs/icon-pinterest.svg';
-import instagramIcon from '../assets/imgs/icon-instagram.svg';
-
 function Footer() {
   return (
     <footer className="footer-container">
