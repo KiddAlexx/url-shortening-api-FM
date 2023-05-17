@@ -171,6 +171,7 @@
   .link-container-left {
     border-bottom: 0.1rem var(--gray-opacity) solid;
     padding-bottom: 0.8rem;
+    width: 100%;
   }
 
   .link-container-right {

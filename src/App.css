@@ -248,7 +248,6 @@ a:hover {
 
 .link-container-left {
   width: clamp(11.7rem, 100%, 45rem);
-  max-width: 58rem;
 }
 
 .link-container-right {
